@@ -3,6 +3,21 @@ SA-TEAMCITY
 
 [![Build Status](https://travis-ci.org/softasap/sa-teamcity.svg?branch=master)](https://travis-ci.org/softasap/sa-teamcity)
 
+
+Example of infrastructure to deploy on a single dedicated ubuntu 14.04 LTS box:
+
+https://github.com/softasap/sa-teamcity/tree/master/box-example
+
+1) init dependencies  (bootstrap.sh / bootstrap_mac.sh)
+2) initialize dependencies ( run init.sh)
+3) use box.yml as a template to adjust your configuration (see possible variables below)
+4) Using provision_box.sh as an example, configure your own box.
+
+Note: user for deployment should be sudoer without password. 
+
+This script: http://bit.ly/sudoer  can be used to make user a temporary sudoer.
+
+
 Example of use:
 
 - hosts: www
